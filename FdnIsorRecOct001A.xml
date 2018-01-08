@@ -1,0 +1,283 @@
+﻿<!-- 각도는 Radian 값 입력
+     ORIGNX, ORIGINY, ORIGINZ는 고유 키워드 -->
+
+<Civil3DSymbol>
+	<CatalogEquipmentInfo>
+		<Part Name="FdnIsorRecOct001R" />
+		<Points>
+			<!--Origin Point-->
+			<Point3D>
+				<Point ID="ORG">
+					<XYZ X="OriginX" Y="OriginY" Z="OriginZ" />
+				</Point>
+			</Point3D>
+
+			<!--Grouting Point-->
+			<Point3D>
+				<Point ID="GPT1">
+					<XYZ X="-(PedestalWidth/2-GroutingThickness) * tan(22.5*(pi/180))" Y="(PedestalWidth/2-GroutingThickness)" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="GPT2">
+					<XYZ X="(PedestalWidth/2-GroutingThickness) * tan(22.5*(pi/180))" Y="(PedestalWidth/2-GroutingThickness)" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="GPT3">
+					<XYZ X="(PedestalWidth/2-GroutingThickness)" Y="(PedestalWidth/2-GroutingThickness) * tan(22.5*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="GPT4">
+					<XYZ X="(PedestalWidth/2-GroutingThickness)" Y="-(PedestalWidth/2-GroutingThickness) * tan(22.5*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="GPT5">
+					<XYZ X="(PedestalWidth/2-GroutingThickness) * tan(22.5*(pi/180))" Y="-(PedestalWidth/2-GroutingThickness)" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="GPT6">
+					<XYZ X="-(PedestalWidth/2-GroutingThickness) * tan(22.5*(pi/180))" Y="-(PedestalWidth/2-GroutingThickness)" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="GPT7">
+					<XYZ X="-(PedestalWidth/2-GroutingThickness)" Y="-(PedestalWidth/2-GroutingThickness) * tan(22.5*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="GPT8">
+					<XYZ X="-(PedestalWidth/2-GroutingThickness)" Y="(PedestalWidth/2-GroutingThickness) * tan(22.5*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>
+
+			<!--Pedestal Point-->
+			<Point3D>
+				<Point ID="PPT1">
+					<XYZ X="-(PedestalWidth/2) * tan(22.5*(pi/180))" Y="(PedestalWidth/2)" Z="-GroutingThickness" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="PPT2">
+					<XYZ X="(PedestalWidth/2) * tan(22.5*(pi/180))" Y="(PedestalWidth/2)" Z="-GroutingThickness" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="PPT3">
+					<XYZ X="(PedestalWidth/2)" Y="(PedestalWidth/2) * tan(22.5*(pi/180))" Z="-GroutingThickness" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="PPT4">
+					<XYZ X="(PedestalWidth/2)" Y="-(PedestalWidth/2) * tan(22.5*(pi/180))" Z="-GroutingThickness" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="PPT5">
+					<XYZ X="(PedestalWidth/2) * tan(22.5*(pi/180))" Y="-(PedestalWidth/2)" Z="-GroutingThickness" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="PPT6">
+					<XYZ X="-(PedestalWidth/2) * tan(22.5*(pi/180))" Y="-(PedestalWidth/2)" Z="-GroutingThickness" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="PPT7">
+					<XYZ X="-(PedestalWidth/2)" Y="-(PedestalWidth/2) * tan(22.5*(pi/180))" Z="-GroutingThickness" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="PPT8">
+					<XYZ X="-(PedestalWidth/2)" Y="(PedestalWidth/2) * tan(22.5*(pi/180))" Z="-GroutingThickness" />
+				</Point>
+			</Point3D>
+
+			<!--Footing Point-->
+			<Point3D>
+				<Point ID="FPT1">
+					<XYZ X="-(FootingWidth_X/2)" Y="(FootingWidth_Y/2)" Z="- (GroutingThickness + PedestalHeight)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="FPT2">
+					<XYZ X="(FootingWidth_X/2)" Y="(FootingWidth_Y/2)" Z="- (GroutingThickness + PedestalHeight)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="FPT3">
+					<XYZ X="(FootingWidth_X/2)" Y="-(FootingWidth_Y/2)" Z="- (GroutingThickness + PedestalHeight)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="FPT4">
+					<XYZ X="-(FootingWidth_X/2)" Y="-(FootingWidth_Y/2)" Z="- (GroutingThickness + PedestalHeight)" />
+				</Point>
+			</Point3D>
+
+			<!--Lean Point-->
+			<Point3D>
+				<Point ID="LPT1">
+					<XYZ X="- (FootingWidth_X/2 + LeanConcreteProjection)" Y="(FootingWidth_Y/2 + LeanConcreteProjection)" Z="- (GroutingThickness + PedestalHeight + FootingThickness)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="LPT2">
+					<XYZ X="(FootingWidth_X/2 + LeanConcreteProjection)" Y="(FootingWidth_Y/2 + LeanConcreteProjection)" Z="- (GroutingThickness + PedestalHeight + FootingThickness)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="LPT3">
+					<XYZ X="(FootingWidth_X/2 + LeanConcreteProjection)" Y="-(FootingWidth_Y/2 + LeanConcreteProjection)" Z="- (GroutingThickness + PedestalHeight + FootingThickness)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="LPT4">
+					<XYZ X="- (FootingWidth_X/2 + LeanConcreteProjection)" Y="-(FootingWidth_Y/2 + LeanConcreteProjection)" Z="- (GroutingThickness + PedestalHeight + FootingThickness)" />
+				</Point>
+			</Point3D>
+
+			<!--Section_Clearance Point-->
+			<!--			<Point3D>
+				<Point ID="CLPT">
+					<XYZ X="(PedestalWidth/2-FDN_CL)" Y="-(PedestalWidth/2) * tan(22.5*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>		-->
+		</Points>
+	</CatalogEquipmentInfo>
+	<RebarInfo>		
+		<Part Name="FdnIsoRecOct001_RB" />
+		<Points>
+			<Point3D>
+				<Point ID="ORG">
+					<XYZ X="OriginX" Y="OriginY" Z="OriginZ" />
+				</Point>
+			</Point3D>	
+
+			<!--Section_Rebar Point-->
+			<Point3D>
+				<Point ID="RPT1">
+					<XYZ X="(PedestalWidth/2)" Y="-(PedestalWidth/2) * tan(22.5*(pi/180))" Z="- (GroutingThickness + Ped_Top_CL)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="RPT2">
+					<XYZ X="(PedestalWidth/2)" Y="-(PedestalWidth/2) * tan(22.5*(pi/180))" Z="- (GroutingThickness + Ped_Top_CL + Ped_HMain_Dia*2 + Ped_Hoop_Dia / 2)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="RPT3">
+					<XYZ X="(PedestalWidth/2)" Y="-(PedestalWidth/2) * tan(22.5*(pi/180))" Z="- (GroutingThickness + Ped_Top_CL + Ped_HMain_Dia*2 + Ped_Hoop_Dia / 2 + Ped_Hoop_Top_Space)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="RPT4">
+					<XYZ X="(PedestalWidth/2)" Y="-(PedestalWidth/2) * tan(22.5*(pi/180))" Z="- (GroutingThickness + PedestalHeight) + Ped_Hoop_Bot_Space" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="RPT5">
+					<XYZ X="(FootingWidth_X/2)" Y="-(FootingWidth_Y/2)" Z="- (GroutingThickness + PedestalHeight + FDN_CL)" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="RPT6">
+					<XYZ X="(FootingWidth_X/2)" Y="-(FootingWidth_Y/2)" Z="- (GroutingThickness + PedestalHeight + FootingThickness) + Foot_Bottom_CL" />
+				</Point>
+			</Point3D>
+		</Points>		
+	</RebarInfo>
+	<AnchorBoltInfo>
+		<Part Name="Anc_Po_J001" />
+		<Points>
+			<Point3D>
+				<Point ID="ORG">
+					<XYZ X="OriginX" Y="OriginY" Z="OriginZ" />
+				</Point>
+			</Point3D>		
+
+			<!--Plan_Initial Angle-->
+			<Point3D>
+				<Point ID="IAPT1">
+					<XYZ X="-(BoltCircleDiameter/2) * sin((BoltInitialAngle + (360/BoltNos))*(pi/180))" Y="(BoltCircleDiameter/2) * cos((BoltInitialAngle + (360/BoltNos))*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="IAPT2">
+					<XYZ X="-(BoltCircleDiameter/2) * sin(BoltInitialAngle*(pi/180))" Y="(BoltCircleDiameter/2)*cos(BoltInitialAngle*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="IAPT3">
+					<XYZ X="OriginX" Y="(BoltCircleDiameter/2)" Z="OriginZ" />
+				</Point>
+			</Point3D>
+
+			<!--Plan_BCD Point-->
+			<Point3D>
+				<Point ID="BPT1">
+					<XYZ X="-(BoltCircleDiameter/2)*sin((BoltInitialAngle + (180/BoltNos))*(pi/180))" Y="-(BoltCircleDiameter/2) * cos((BoltInitialAngle + (180/BoltNos))*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>
+			<Point3D>
+				<Point ID="BPT2">
+					<XYZ X="(BoltCircleDiameter/2)*sin((BoltInitialAngle + (180/BoltNos))*(pi/180))" Y="(BoltCircleDiameter/2) * cos((BoltInitialAngle + (180/BoltNos))*(pi/180))" Z="OriginZ" />
+				</Point>
+			</Point3D>
+
+			<!--Section_Projection Point-->
+			<Point3D>
+				<Point ID="PROJPT">
+					<XYZ X="(BoltCircleDiameter/2) * sin(BoltInitialAngle*(pi/180))" Y="(BoltCircleDiameter/2) * cos(BoltInitialAngle*(pi/180))" Z="AnchorBoltProjection" />
+				</Point>
+			</Point3D>						
+		</Points>
+	</AnchorBoltInfo>
+	<Dimensions>
+		<Views>
+			<View Type="Plan" ViewMinX="1500mm" ViewMinY="0mm" ViewMaxX="5000mm" ViewMaxY="3000mm">
+				<TopDimensions>
+					<Dimension Level="1" Offset="5mm" Pos="GPT8, GPT1,GPT2,GPT3" />
+<!--					<Dimension Level="2" Offset="5mm" Pos="GPT3,GPT2,GPT1,GPT8" />-->
+<!--					<Dimension Level="2" Offset="18mm" Pos="PPT8, PPT3" /> -->
+				</TopDimensions>
+				<BottomDimensions>
+<!--					<Dimension Level="1" Offset="5mm" Pos="GPT3,GPT2,GPT1,GPT8" /> -->
+					<Dimension Level="2" Offset="5mm" Pos="PPT8, PPT3" />
+				</BottomDimensions> 
+				<LeftDimensions>
+					<!--					<Dimension Level="1" Offset="50mm" Pos="FPT3,PPT5,GPT6,PPT7,GPT7,GPT8,PPT3,GPT2,PPT2,FPT2" />  -->
+					<!--					<Dimension Level="1" Offset="10mm" Pos="FPT3,FPT2" />				-->
+					<!--<Dimension Level="1" Offset="5mm" Pos="FPT3,FPT2" />			 -->
+					<Dimension Level="2" Offset="5mm" Pos="FPT3, FPT2" />			
+				</LeftDimensions>
+				<RightDimensions>
+<!--					<Dimension Level="1" Offset="5mm" Pos="FPT3,FPT2" />	-->
+					<Dimension Level="2" Offset="5mm" Pos="FPT2,FPT3" />	
+					<!--<Dimension Level="1" Offset="5mm" Pos="FPT2,FPT3" />					-->
+				</RightDimensions>
+			</View>
+			<View Type="Section" ViewMinX="1500mm" ViewMinY="0mm" ViewMaxX="5000mm" ViewMaxY="3000mm">
+<!--				<TopDimensions>
+					<Dimension Level="1" Offset="50mm" Pos="GPT8,GPT1,GPT2, GPT3" />
+					<Dimension Level="2" Offset="100mm" Pos="LPT1,FPT1,FPT2,LPT2" />
+				</TopDimensions>
+				<BottomDimensions>
+					<Dimension Level="1" Offset="50mm" Pos="GPT1,GPT2,GPT3" />
+					<Dimension Level="2" Offset="50mm" Pos="GPT4,GPT5,GPT6" />		
+				</BottomDimensions>-->
+				<LeftDimensions>
+					<Dimension Level="1" Offset="5mm" Pos="RPT6,RPT1" />
+				<!--	<Dimension Level="2" Offset="50mm" Pos="GPT4,GPT5,GPT6" />			-->
+				</LeftDimensions>
+				<RightDimensions>
+					<Dimension Level="1" Offset="5mm" Pos="RPT1,RPT6" />
+					<!--<Dimension Level="2" Offset="50mm" Pos="GPT4,GPT5,GPT6" />			-->
+				</RightDimensions>			
+			</View>
+		</Views>
+	</Dimensions>	
+</Civil3DSymbol>
